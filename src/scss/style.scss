@@ -14,3 +14,80 @@ html {
 	margin: 0;
 	padding: 0;
 }
+
+.wrapper {
+	width: 100vw;
+	height: 100vh;
+
+	// Centers Card
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background-color: lightseagreen;
+
+	&__inner {
+		width: 375px;
+		height: 800px;
+
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 60px 250px 1fr min-content;
+		grid-column-gap: 0px;
+		grid-row-gap: 0px;
+
+		background-color: lightcoral;
+	}
+}
+
+.banner {
+	// width: 100%;
+	// height: 60px;
+
+	display: grid;
+	justify-content: start;
+	align-content: center;
+
+	padding: 20px;
+
+	background-color: lightskyblue;
+}
+
+.image-container {
+	// width: 100%;
+	// height: 250px;
+
+	background-color: lightsalmon;
+
+	background-image: url('/src/images/hero-mobile.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.info {
+	width: 100%;
+	height: 100%;
+
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: column;
+
+	padding: 20px;
+
+	background-color: lightyellow;
+
+	&__title {
+		text-align: center;
+		letter-spacing: 3px;
+		&--span {
+			color: green;
+		}
+	}
+
+	&__description {
+		line-height: 1.6;
+		text-align: center;
+	}
+}
