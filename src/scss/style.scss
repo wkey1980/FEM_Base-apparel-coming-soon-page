@@ -1,3 +1,7 @@
+
+
+
+
 // * {
 // 	outline: 1px solid red;
 // }
@@ -89,5 +93,16 @@ html {
 	&__description {
 		line-height: 1.6;
 		text-align: center;
+	}
+
+	&__form {
+
+		padding: 10px;
+		border: 2px solid green;
+
+		& input {
+			background-color: lightpink;
+			border: none;
+		}
 	}
 }

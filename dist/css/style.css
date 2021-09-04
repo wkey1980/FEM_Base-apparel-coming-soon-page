@@ -68,3 +68,11 @@ html {
   line-height: 1.6;
   text-align: center;
 }
+.info__form {
+  padding: 10px;
+  border: 2px solid green;
+}
+.info__form input {
+  background-color: lightpink;
+  border: none;
+}
