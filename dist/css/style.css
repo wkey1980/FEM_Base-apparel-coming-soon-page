@@ -19,3 +19,67 @@ body {
   font-family: "Josefin Sans", sans-serif;
   font-size: 16px;
 }
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: lightgreen;
+}
+.wrapper__inner {
+  width: 1440px;
+  height: 800px;
+}
+
+.content {
+  height: 100%;
+  display: flex;
+}
+.content__info {
+  flex: 2;
+  padding: 20px;
+  background-color: teal;
+}
+.content__hero {
+  flex: 1;
+  background-image: url("/src/images/hero-desktop.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 1440px) {
+  /* Mobile layout */
+  .wrapper {
+    background-color: lightblue;
+  }
+  .wrapper__inner {
+    width: 375px;
+    height: 800px;
+  }
+
+  .content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+  .content__info {
+    width: 100%;
+    height: 100%;
+    background-color: slateblue;
+  }
+  .content__hero {
+    width: 100%;
+    height: 100%;
+    background-image: url("/src/images/hero-mobile.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}
