@@ -34,28 +34,7 @@ body {
   height: 800px;
 }
 
-.content {
-  width: 100%;
-  height: 100%;
-  display: grid;
-  grid-template-columns: 60% 40%;
-  grid-template-rows: 1fr;
-  display: grid;
-}
-.content__info {
-  width: 100%;
-  height: 100%;
-  background-color: white;
-}
-.content__hero {
-  background-image: url("/src/images/hero-mobile.jpg");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-
 @media only screen and (max-width: 1440px) {
-  /* Mobile layout */
   .wrapper {
     background-color: lightblue;
   }
