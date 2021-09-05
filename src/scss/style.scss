@@ -37,40 +37,34 @@ body {
 	}
 }
 
+
 .content {
-	// width: ;
+	width: 100%;
 	height: 100%;
-	display: flex;
+
+	display: grid;
+	grid-template-columns: 60% 40%;
+	grid-template-rows: 1fr;display: grid;
 
 	&__info {
-		flex: 2;
+		width: 100%;
+		height: 100%;
 
-		padding: 20px;
-
-		background-color: teal;
+		background-color: white;
 	}
 
 	&__hero {
-		flex: 1;
+		// width: 100%;
+		// height: 100%;
 
-		background-image: url('/src/images/hero-desktop.jpg');
+		background-image: url('/src/images/hero-mobile.jpg');
 		background-size: cover;
 		background-position: center center;
 		background-repeat: no-repeat;
-
 	}
 }
 
-// .hero-img {
 
-// 	&--desktop {
-// 		display: block;
-// 	}
-
-// 	&--mobile {
-// 		display: none;
-// 	}
-// }
 
 
 
@@ -90,41 +84,4 @@ body {
 			height: 800px;
 		}
 	}
-
-	.content {
-		width: 100%;
-		height: 100%;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		flex-direction: column-reverse;
-
-		&__info {
-			width: 100%;
-			height: 100%;
-
-			background-color: slateblue;
-		}
-
-		&__hero {
-			width: 100%;
-			height: 100%;
-
-			background-image: url('/src/images/hero-mobile.jpg');
-			background-size: cover;
-			background-position: center center;
-			background-repeat: no-repeat;
-		}
-	}
 }
-
-// .hero-img {
-
-// 	&--desktop {
-// 		display: none;
-// 	}
-
-// 	&--mobile {
-// 		display: block;
-// 	}
-// }
